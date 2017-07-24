@@ -1,0 +1,22 @@
+<ion-view class="main">
+
+	<ion-tabs class="tabs-icon-top">
+
+		<ion-tab title="Interview" icon-on="ion-ios-help" icon-off="ion-ios-help-outline">
+			<ion-nav-view name="interview-tab"></ion-nav-view>
+		</ion-tab>
+
+		<ion-tab title="Handsup" icon-on="ion-ios-chatbubble" icon-off="ion-ios-chatbubble-outline">
+		</ion-tab>
+
+		<ion-tab></ion-tab><button ng-click="toggleAddButtonBackdrop()"><span ng-class="{'active': showAddButtonBackdrop}">&plus;</span></button>
+
+		<ion-tab title="Helpout" icon-on="ion-ios-lightbulb" icon-off="ion-ios-lightbulb-outline">
+		</ion-tab>
+
+		<ion-tab title="More" icon-on="ion-ios-more" icon-off="ion-ios-more-outline">
+		</ion-tab>
+
+	</ion-tabs>
+
+</ion-view>

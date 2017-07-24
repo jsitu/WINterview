@@ -1,0 +1,58 @@
+@import "scss/shared/color";
+@import "scss/shared/image";
+
+/*Styles for the signup screen*/
+.main {
+  
+  .tabs-icon-top {
+
+    i {
+      font-size: 3em;
+      padding-top: 3px;
+    }
+    button {
+      display: block;
+      position: absolute;
+      left: 50%;
+      margin-left: -20px;
+      bottom: 4px;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background: $winterview-blue;
+      border: none;
+      color: #fff;
+      &.activated {
+        background: $facebook-light-blue;
+      }
+      span {
+        display: block;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 50%;
+        top: 50%;
+        margin-left: -7px;
+        margin-top: -7px;
+        font-size: 1.5em;
+        transition: all .3s linear;
+        line-height: .5em;
+
+        &.active {
+          transform: rotate(45deg);
+        }
+      }
+    }
+    a#addButton {
+      opacity: 1;
+    }
+  }
+  a.tab-item:nth-of-type(3) {
+    display: block;
+    margin-top: -9999px;
+    z-index: -1;
+  }
+  .tab-item-active {
+    color: $winterview-red;
+  }
+}

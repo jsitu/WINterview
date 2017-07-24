@@ -1,0 +1,89 @@
+@import "scss/shared/color";
+
+/* Global Styles */
+.view-container{
+	background: $color-white !important;
+}
+
+body {
+	color: $winterview-dark;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 400;
+	background: $color-white;
+}
+
+/* Global input styles */
+label.item.item-input {
+	width: 90%;
+	padding-bottom: 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border: none;
+	border-bottom: 1px solid $winterview-dark;
+	background: none;
+
+	&.error {
+		border-bottom: 2px solid $color-warning;
+	}
+
+	div.input-label {
+		width: auto;
+		font-size: .9em;
+	}
+}
+
+.button.ng-hide{
+ 	display: none;
+}
+
+/* Global select dropdown styles */
+.item-select select {
+	background: none;
+	font-size: .9em;
+}
+
+/* Link button that stays at the bottom of the screen */
+.bottomLinkButton {
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	font-size: 1em;
+	color: $winterview-dark;
+	text-decoration: underline !important;
+}
+
+.linkedInBackground {
+	color: $color-white;
+	background: $linkedin-blue;
+
+	&.activated {
+		background: $linkedin-light-blue;
+	}
+}
+
+.facebookBackground {
+	color: $color-white;
+	background: $facebook-blue;
+
+	&.activated {
+		background: $winterview-light-blue;
+	}
+}
+
+.winterviewRedBackground {
+	color: $color-white;
+	background: $winterview-red;
+
+	&.activated {
+		background: $winterview-light-red;
+	}
+}
+
+.winterviewGreyBackground {
+	background: $winterview-grey;
+
+	&.activated {
+		background: $winterview-light-grey;
+	}
+}

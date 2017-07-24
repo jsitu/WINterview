@@ -1,0 +1,36 @@
+<ion-view class="signup">
+      <div class="error" ng-show="!isEmailValid || !isPasswordValid || signupError.showError">
+        <span ng-show="!isEmailValid" class="warning"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Please put in a valid email address.</span>
+        <span ng-show="!isPasswordValid" class="warning"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;Password should be at least 6 characters long.</span>
+        <span ng-show="signupError.showError" class="error"><i class="fa fa-ban"></i>&nbsp;&nbsp;{{signupError.message}}</span>
+      </div>
+      
+      <div id="logo"></div>
+
+      <p>Sign up to get instant access to millions of real world interview questions, answers as well as professional interview training</p>
+
+      <a class="button button-block linkedInBackground" id="signupWithLinkedInButton">Sign up with LinkedIn</a>
+      <a class="button button-block facebookBackground" id="signupWithFacebookButton">Sign up with Facebook</a>
+
+      <ul class="divider">
+        <li></li>
+        <li>or</li>
+        <li></li>
+      </ul>
+
+      <form name="signupForm">
+        <label class="item item-input" ng-class="{error: !isEmailValid}">
+          <input name="email" type="email" ng-model="user.email" placeholder="Email Address" required>
+        </label>
+        <label class="item item-input" ng-class="{error: !isPasswordValid}">
+          <input name="password" type="password" ng-model="user.password" placeholder="Password" ng-minlength="6" required>
+        </label>
+      </form>
+
+      <a class="button button-block winterviewRedBackground" ng-class="{'signupSuccess':signupSuccess}" id="signupButton" ng-click="signup()" ng-disabled="signupForm.email.$error.required || signupForm.password.$error.required">
+        <span ng-show="!signupSuccess">Sign up</span>
+        <span ng-show="signupSuccess"><i class="fa fa-check-circle-o"></i>&nbsp;&nbsp;Success</span>
+      </a>
+
+      <a class="button button-clear button-dark bottomLinkButton" id="signinLink" ui-sref="signin">Already a member? Sign in now!</a>
+</ion-view>

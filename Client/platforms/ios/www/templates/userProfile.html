@@ -1,0 +1,70 @@
+<ion-view class="userProfile">
+  <ion-slide-box on-slide-changed="slideChanged(index)">
+    <ion-slide class="slide-content">
+
+      <div id="logo"></div>
+
+      <ul class="stepIndicator">
+        <li ng-class="{active: slideIndex == 0}">1</li>
+        <li ng-class="{active: slideIndex == 1}">2</li>
+      </ul>
+
+      <p>Let start off by telling us a little bit about yourself so we can better serve you.</p>
+
+      <label class="item item-input">
+        <input type="text" placeholder="Nick Name">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="First Name">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Last Name">
+      </label>
+
+      <button class="button button-clear button-dark" id="nextButton" ng-click="next()">Next</button>
+
+      <button class="button button-clear button-dark" id="skipLink" ng-click="skipToMainScreen()">Skip for now</button>
+
+    </ion-slide>
+
+    <ion-slide class="slide-content">
+
+      <div id="logo"></div>
+
+      <ul class="stepIndicator">
+      <li ng-class="{active: slideIndex == 0}">1</li>
+      <li ng-class="{active: slideIndex == 1}">2</li>
+      </ul>
+
+      <p>Let start off by telling us a little bit about yourself so we can better serve you.</p>
+
+      <label class="item item-input item-select">
+        <div class="input-label">Gender</div>
+        <select>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">Birth Year</div>
+        <select>
+          <option>2014</option>
+          <option>2015</option>
+        </select>
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">Education</div>
+        <select>
+          <option>Bachelor</option>
+          <option>Master</option>
+        </select>
+      </label>
+
+      <button class="button button-clear button-dark" id="finishButton" ng-click="skipToMainScreen()">Finish</button>
+
+      <button class="button button-clear button-dark" id="skipLink" ng-click="skipToMainScreen()">Skip for now</button>
+
+    </ion-slide>
+    
+  </ion-slide-box>
+</ion-view>

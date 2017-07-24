@@ -1,0 +1,28 @@
+<ion-view class="signin" ng-class="{'zoomOut': zoomOut}">
+      <div class="error" ng-show="signinError.showError">
+        <span ng-show="signinError.showError" class="error"><i class="fa fa-ban"></i>&nbsp;&nbsp;{{signinError.message}}</span>
+      </div>
+
+      <div id="logo"></div>
+
+      <p>Share, learn and unlock the secret of getting your dream job offer</p>
+
+      <form name="signinForm">
+        <label class="item item-input">
+          <input name="email" type="email" ng-model="user.email" placeholder="Email Address">
+        </label>
+        <label class="item item-input">
+          <input name="password" type="password" ng-model="user.password" placeholder="Password">
+        </label>
+      </form>
+      
+      <a class="button button-block winterviewRedBackground" ng-class="{'signinSuccess':signinSuccess}" id="signinButton" ng-click="signIn()" ng-disabled="signinForm.email.$error.required || signinForm.password.$error.required">
+        <span ng-show="!signinSuccess">Sign in</span>
+        <span ng-show="signinSuccess"><i class="fa fa-check-circle-o"></i>&nbsp;&nbsp;Success</span>
+      </a>
+      <a class="button button-block linkedInBackground" id="signinWithLinkedInButton">Sign in with LinkedIn</a>
+      <a class="button button-block facebookBackground" id="signinWithFacebookButton">Sign in with Facebook</a>
+
+      <a class="button button-clear button-dark bottomLinkButton" id="forgotPasswordLink" ui-sref="reset">Forgot password?</a>
+      <a class="button button-clear button-dark bottomLinkButton" id="signupLink" ui-sref="signup">Sign up now!</a>
+</ion-view>

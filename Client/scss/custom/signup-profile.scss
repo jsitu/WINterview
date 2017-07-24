@@ -1,0 +1,107 @@
+@import "scss/shared/color";
+@import "scss/shared/image";
+
+/*Styles for the user profile screen*/
+.signupProfile {
+
+  &.zoomOut {
+    -webkit-animation: zoomOut .5s;
+    animation: zoomOut .5s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .slider {
+    height: 100%;
+    background: $intro-image-background;
+    background-size: 100%;
+  }
+  .slider-slide {
+    padding-top: 10px;
+    background: none;
+    text-align: center;
+  }
+  #logo {
+    display: block;
+    width: 204px;
+    height: 45px;
+    margin: 30px auto 15px auto;
+    background: $app-logo-image;
+  }
+  ul.stepIndicator {
+    display: block;
+    width: 100%;
+    clear: both;
+    margin: 30px auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    li {
+      display: block;
+      float: left;
+      width: 2em;
+      height: 2em;
+      border-radius: 1em;
+      border: 1px solid $winterview-dark;
+      color: $winterview-dark;
+      background: none;
+      font-weight: 500;
+      line-height: 1.8em;
+      margin-left: 35%;
+
+      &:last-child {
+        float: right;
+        margin-left: 0;
+        margin-right: 35%;
+      }
+      &.active {
+        background: $winterview-blue;
+        color: $color-white;
+        border: 1px solid $winterview-blue;
+      }
+    }
+  }
+  .slide-content {
+    p {
+      margin: 0 25px 20px 25px;
+      text-align: justify;
+
+      strong{
+        font-size: 1.2em;
+      }
+    }
+    .item-select select {
+      max-width: 75%;
+      padding-right: 35px;
+    }
+  }
+  .slider-pager {
+    .slider-pager-page {
+      display: none;
+    }
+  }
+  a#nextButton, a#finishButton {
+    margin-top: 25px;
+
+    &.ng-hide-remove {
+      -webkit-animation: zoomIn .3s;
+      animation: zoomIn .3s;
+    }
+  }
+  a#finishButton {
+
+    &.done {
+      color: $color-success;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    span.ng-hide-remove {
+      -webkit-animation: zoomIn .3s;
+      animation: zoomIn .3s;
+    }
+  }
+  a#skipLink {
+    margin-left: -51px;
+  }
+}

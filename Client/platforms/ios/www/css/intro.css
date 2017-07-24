@@ -1,0 +1,58 @@
+/*Styles for the intro screen*/
+.intro .slider {
+  height: 100%;
+  background: url('../img/intro/background-1.png') no-repeat center center;
+  background-size: 100%;
+}
+
+.intro .slider-slide {
+  padding-top: 55px;
+  background: none;
+  text-align: center;
+}
+
+.intro #logo {
+  display: block;
+  width: 204px;
+  height: 45px;
+  margin: 30px auto 60px auto;
+  background: url('../img/intro/app_logo.png') no-repeat center center;
+}
+
+.intro .slide-content p {
+  margin: 0 45px 20px 45px;
+}
+
+.intro .slide-content p strong{
+  font-size: 1.2em;
+}
+
+.intro button#skipButton {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.intro .button.ng-hide{
+  display:none;
+}
+
+.intro .slider-pager {
+  bottom: 80px;
+}
+
+.intro .slider-pager .slider-pager-page {
+  font-size: .7em;
+  color: #212121;
+  width: 10px;
+}
+
+.intro div.bar.bar-footer {
+  padding: 0;
+}
+
+.intro div.bar.bar-footer div.button-bar a {
+  line-height: 43px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+}

@@ -1,0 +1,116 @@
+@import "scss/shared/color";
+@import "scss/shared/image";
+
+/*Styles for the signup screen*/
+.signup {
+  height: 100%;
+  background: $intro-image-background;
+  background-size: 100%;
+  padding-top: 10px;
+  text-align: center;
+  box-sizing: border-box;
+
+  div.error {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+
+    span {
+      display: block;
+      width: 100%;
+      padding: 3px 5px;
+      text-align: left;
+      color: $color-white;
+      font-size: .9em;
+      box-sizing: border-box;
+
+      &.warning {
+        background: $color-warning;
+      }
+      &.error {
+        background: $winterview-red;
+      }
+      &.ng-hide-add {
+        -webkit-animation: flipOutX 1s;
+        animation: flipOutX 1s;
+      }
+      &.ng-hide-remove {
+        -webkit-animation: flipInX 1s;
+        animation: flipInX 1s;
+      }
+    }
+  }
+  
+  label.item.item-input{
+    display: block;
+    position: relative;
+    overflow: visible;
+  }
+  #logo {
+    display: block;
+    width: 204px;
+    height: 45px;
+    margin: 30px auto 15px auto;
+    background: $app-logo-image;
+  }
+  p {
+    margin: 0 25px 20px 25px;
+    text-align: justify;
+
+    strong{
+      font-size: 1.2em;
+    }
+  }
+  a.button.button-block {
+    margin: 20px auto 0 auto;
+    width: 90%;
+    font-size: 1em;
+    font-weight: 500;
+    transition: all .3s linear;
+
+    &:hover {
+      color: $color-white;
+    }
+    &.signupSuccess {
+      background: $color-success;
+    }
+  }
+  a#signupWithFacebookButton {
+    margin-top: 15px;
+  }
+  ul.divider {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    overflow: hidden;
+
+    li {
+      float: left;
+      width: 16%;
+      padding-top: 17px;
+
+      &:first-child, &:last-child {
+        border-bottom: 1px solid $winterview-dark;
+        height: 30px;
+        float: left;
+        width: 42%;
+        padding: 0;
+      }
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+  a#signupButton {
+    margin-top: 25px;
+  }
+  a#signinLink {
+    margin-left: -110px;
+  }
+}

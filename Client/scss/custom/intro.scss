@@ -1,0 +1,58 @@
+@import "scss/shared/color";
+@import "scss/shared/image";
+
+/*Styles for the intro screen*/
+.intro {
+
+  .slider {
+    height: 100%;
+    background: $intro-image-background;
+    background-size: 100%;
+  }
+  .slider-slide {
+    padding-top: 55px;
+    background: none;
+    text-align: center;
+  }
+  #logo {
+    display: block;
+    width: 204px;
+    height: 45px;
+    margin: 30px auto 60px auto;
+    background: $app-logo-image;
+  }
+  .slide-content p {
+    margin: 0 45px 20px 45px;
+
+    strong{
+      font-size: 1.2em;
+    }
+  }
+  a.skipButton {
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  .slider-pager {
+    bottom: 80px;
+
+    .slider-pager-page {
+      font-size: .7em;
+      color: $winterview-dark;
+      width: 10px;
+    }
+  }
+  div.bar.bar-footer {
+    padding: 0;
+
+    div.button-bar {
+
+      a {
+        line-height: 43px;
+        border: none;
+        color: $color-white;
+        font-weight: 500;
+      }
+    }
+  }
+
+}

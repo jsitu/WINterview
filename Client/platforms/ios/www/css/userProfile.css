@@ -1,0 +1,107 @@
+/*Styles for the user profile screen*/
+.userProfile .slider {
+  height: 100%;
+  background: url('../img/intro/background-1.png') no-repeat center center;
+  background-size: 100%;
+}
+
+.userProfile .slider-slide {
+  padding-top: 10px;
+  background: none;
+  text-align: center;
+}
+
+.userProfile #logo {
+  display: block;
+  width: 204px;
+  height: 45px;
+  margin: 30px auto 15px auto;
+  background: url('../img/intro/app_logo.png') no-repeat center center;
+}
+
+.userProfile ul.stepIndicator {
+  display: block;
+  width: 100%;
+  clear: both;
+  margin: 30px auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.userProfile ul.stepIndicator li {
+  display: block;
+  float: left;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  border: 1px solid #212121;
+  color: #212121;
+  background: none;
+  font-weight: 500;
+  line-height: 1.8em;
+  margin-left: 35%;
+}
+
+.userProfile ul.stepIndicator li:last-child {
+  float: right;
+  margin-left: 0;
+  margin-right: 35%;
+}
+
+.userProfile ul.stepIndicator li.active {
+  background: #1976D2;
+  color: #fff;
+  border: 1px solid #1976D2;
+}
+
+.userProfile .slide-content p {
+  margin: 0 25px 20px 25px;
+  text-align: justify;
+}
+
+.userProfile .slide-content p strong{
+  font-size: 1.2em;
+}
+
+.userProfile .button.ng-hide{
+  display: none;
+}
+
+.userProfile .slider-pager .slider-pager-page {
+  display: none;
+}
+
+.userProfile label.item.item-input {
+  width: 90%;
+  padding-bottom: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #212121;
+  background: none;
+}
+
+.userProfile label.item.item-input div.input-label {
+  width: auto;
+  font-size: .9em;
+}
+
+.userProfile .item-select select {
+  background: none;
+  font-size: .9em;
+}
+
+.userProfile button#nextButton, .userProfile button#finishButton {
+  margin-top: 25px;
+}
+
+.userProfile button#skipLink {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  margin-left: -51px;
+  font-size: 1em;
+  color: #212121;
+  text-decoration: underline;
+}

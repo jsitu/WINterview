@@ -1,0 +1,97 @@
+@import "scss/shared/color";
+@import "scss/shared/image";
+
+/*Styles for the signup screen*/
+.signin {
+  height: 100%;
+  background: $intro-image-background;
+  background-size: 100%;
+  background-color: $color-white;
+  padding-top: 10px;
+  text-align: center;
+  box-sizing: border-box;
+
+  &.zoomOut {
+    -webkit-animation: zoomOut .5s;
+    animation: zoomOut .5s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  div.error {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+
+    span {
+      display: block;
+      width: 100%;
+      padding: 3px 5px;
+      text-align: left;
+      color: $color-white;
+      font-size: .9em;
+      box-sizing: border-box;
+
+      &.warning {
+        background: $color-warning;
+      }
+      &.error {
+        background: $winterview-red;
+      }
+      &.ng-hide-add {
+        -webkit-animation: flipOutX 1s;
+        animation: flipOutX 1s;
+      }
+      &.ng-hide-remove {
+        -webkit-animation: flipInX 1s;
+        animation: flipInX 1s;
+      }
+    }
+  }
+  
+  #logo {
+    display: block;
+    width: 204px;
+    height: 45px;
+    margin: 30px auto 15px auto;
+    background: $app-logo-image;
+  }
+  p {
+    margin: 30px 30px 20px 30px;
+    text-align: center;
+
+    strong{
+      font-size: 1.2em;
+    }
+  }
+  a.button.button-block {
+    margin: 20px auto 0 auto;
+    width: 90%;
+    font-size: 1em;
+    font-weight: 500;
+    transition: all .3s linear;
+
+    &:hover {
+      color: $color-white;
+    }
+    &.signinSuccess {
+      background: $color-success;
+    }
+  }
+  a#signinButton {
+    margin-top: 25px;
+  }
+  a#forgotPasswordLink {
+    left: 5%;
+  }
+  a#signupLink {
+    left: auto;
+    right: 5%;
+  }
+}
